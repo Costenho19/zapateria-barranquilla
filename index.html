@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnix - El Futuro de tu Zapatería en WhatsApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .whatsapp-green { background-color: #25D366; }
+        .whatsapp-dark { background-color: #075e54; }
+        .chat-bg { background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png'); }
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .gradient-text { background: linear-gradient(90deg, #075e54, #25D366); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- NAVEGACIÓN -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-200 py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-extrabold gradient-text">OMNIX</div>
+            <div class="hidden md:flex space-x-8 font-semibold text-slate-600">
+                <a href="#problema" class="hover:text-green-600">Problema</a>
+                <a href="#solucion" class="hover:text-green-600">Solución</a>
+                <a href="#demo" class="hover:text-green-600">Demo</a>
+                <a href="#faq" class="hover:text-green-600">Preguntas</a>
+            </div>
+            <a href="#contacto" class="whatsapp-green text-white px-6 py-2 rounded-full font-bold hover:bg-green-600 transition">Empezar Ahora</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="pt-32 pb-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-left">
+                <span class="bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Tecnología para Calzado</span>
+                <h1 class="text-5xl md:text-7xl font-black mt-6 mb-8 leading-tight text-slate-900">
+                    No pierdas más ventas por <span class="text-green-500">no responder</span> a tiempo.
+                </h1>
+                <p class="text-xl text-slate-600 mb-10 leading-relaxed">
+                    Omnix es el asistente inteligente que atiende tu zapatería en WhatsApp. Responde tallas, muestra fotos y filtra clientes interesados las 24 horas del día.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contacto" class="whatsapp-green text-white px-10 py-5 rounded-2xl font-black text-xl shadow-xl hover:scale-105 transition text-center">
+                        PROBAR DEMO GRATIS
+                    </a>
+                    <div class="flex items-center gap-3 px-4">
+                        <div class="flex -space-x-2">
+                            <img src="https://i.pravatar.cc/100?u=1" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://i.pravatar.cc/100?u=2" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://i.pravatar.cc/100?u=3" class="w-10 h-10 rounded-full border-2 border-white">
+                        </div>
+                        <p class="text-sm font-bold text-slate-500">+500 Zapaterías confían</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-green-500/10 rounded-full blur-3xl"></div>
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" class="relative rounded-3xl shadow-2xl" alt="Zapato Hero">
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PROBLEMA -->
+    <section id="problema" class="py-24 bg-slate-900 text-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-black mb-6">¿Tu WhatsApp es un caos?</h2>
+                <p class="text-xl text-slate-400">Atender una zapatería digital es difícil sin las herramientas correctas.</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="p-8 bg-slate-800 rounded-3xl border border-slate-700">
+                    <div class="text-red-500 text-4xl mb-6"><i class="fas fa-clock"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Espera Eterna</h3>
+                    <p class="text-slate-400 text-sm">El cliente pregunta a las 10 PM y tú respondes a las 8 AM. Para esa hora, ya le compró a otro.</p>
+                </div>
+                <div class="p-8 bg-slate-800 rounded-3xl border border-slate-700">
+                    <div class="text-red-500 text-4xl mb-6"><i class="fas fa-redo"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Preguntas Repetitivas</h3>
+                    <p class="text-slate-400 text-sm">"¿Qué precio?", "¿Qué tallas?", "¿Tienen blanco?". Pasas el día escribiendo lo mismo mil veces.</p>
+                </div>
+                <div class="p-8 bg-slate-800 rounded-3xl border border-slate-700">
+                    <div class="text-red-500 text-4xl mb-6"><i class="fas fa-search"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Inventario Confuso</h3>
+                    <p class="text-slate-400 text-sm">No sabes qué queda en bodega y terminas vendiendo algo que ya no tienes.</p>
+                </div>
+                <div class="p-8 bg-slate-800 rounded-3xl border border-slate-700">
+                    <div class="text-red-500 text-4xl mb-6"><i class="fas fa-user-slash"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Ventas Perdidas</h3>
+                    <p class="text-slate-400 text-sm">Muchos curiosos preguntando y pocos comprando. Tu tiempo se pierde en chats sin cierre.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOLUCIÓN / CÓMO FUNCIONA -->
+    <section id="solucion" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-black mb-8 leading-tight">Omnix es como tener a tu mejor vendedor trabajando <span class="text-green-500">24/7</span></h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 whatsapp-green text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg">1</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Conexión Instantánea</h4>
+                                <p class="text-slate-600">Vinculamos tu número de WhatsApp actual. Sin cambiar de chip ni perder tus contactos.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 whatsapp-green text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg">2</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Carga de Catálogo</h4>
+                                <p class="text-slate-600">Subes tus fotos, precios y tallas disponibles. El sistema aprende tu inventario en minutos.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 whatsapp-green text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg">3</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Venta Automatizada</h4>
+                                <p class="text-slate-600">Cuando un cliente escribe, Omnix lo guía, le muestra fotos y te entrega el pedido listo para cobrar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-[3rem] shadow-2xl border border-slate-200">
+                    <div class="whatsapp-dark p-4 rounded-t-[2.5rem] flex items-center text-white">
+                        <div class="w-10 h-10 bg-slate-400 rounded-full mr-3"></div>
+                        <div>
+                            <p class="font-bold">Omnix Bot - Zapatería</p>
+                            <p class="text-xs opacity-70">Escribiendo...</p>
+                        </div>
+                    </div>
+                    <div class="chat-bg p-6 flex flex-col space-y-4 min-h-[500px] rounded-b-[2.5rem]">
+                        <div class="bg-white p-3 rounded-lg rounded-tl-none shadow-sm self-start max-w-[80%] text-sm">
+                            Hola! ¿Tienen los tenis blancos de la publicación en talla 38?
+                        </div>
+                        <div class="bg-[#dcf8c6] p-3 rounded-lg rounded-tr-none shadow-sm self-end max-w-[85%] text-sm">
+                            ¡Hola! 😊 Sí, tenemos disponibilidad inmediata en talla 38. Aquí puedes ver las fotos reales:
+                            <div class="grid grid-cols-2 gap-2 mt-3">
+                                <img src="mujer.png" class="rounded-lg h-32 w-full object-cover bg-white" alt="Mujer">
+                                <img src="hombre.png" class="rounded-lg h-32 w-full object-cover bg-white" alt="Hombre">
+                            </div>
+                            <p class="mt-2 font-bold">💰 Precio: $125.000</p>
+                            <p class="mt-1">¿Deseas que te tome el pedido ahora mismo?</p>
+                        </div>
+                        <div class="bg-white p-3 rounded-lg rounded-tl-none shadow-sm self-start max-w-[80%] text-sm">
+                            ¡Sí! Por favor.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN COMPARATIVA -->
+    <section class="py-24 bg-white px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16">El cambio es radical</h2>
+            <div class="grid md:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
+                <div class="p-12 bg-slate-50">
+                    <h4 class="text-2xl font-bold mb-8 text-red-600">Sin Omnix</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-3 text-slate-500">
+                            <i class="fas fa-times-circle mt-1"></i>
+                            <span>Respondes cuando puedes (a veces horas después).</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-500">
+                            <i class="fas fa-times-circle mt-1"></i>
+                            <span>Tienes que buscar fotos en la galería cada vez.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-500">
+                            <i class="fas fa-times-circle mt-1"></i>
+                            <span>Pierdes el hilo de quién te iba a comprar.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-12 bg-green-50">
+                    <h4 class="text-2xl font-bold mb-8 text-green-700">Con Omnix</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-3 text-slate-800 font-semibold">
+                            <i class="fas fa-check-circle mt-1 text-green-500"></i>
+                            <span>Respuesta instantánea 24/7, sin excepciones.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-800 font-semibold">
+                            <i class="fas fa-check-circle mt-1 text-green-500"></i>
+                            <span>Catálogo visual enviado automáticamente.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-800 font-semibold">
+                            <i class="fas fa-check-circle mt-1 text-green-500"></i>
+                            <span>Recibes una lista de pedidos listos para enviar.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section id="faq" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-black text-center mb-16">Preguntas Frecuentes</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h4 class="font-bold text-lg mb-2">¿Necesito una computadora encendida?</h4>
+                    <p class="text-slate-600">No. Omnix funciona en la nube. Una vez configurado, trabaja solo aunque tu celular esté apagado.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h4 class="font-bold text-lg mb-2">¿Puedo seguir usando mi WhatsApp normal?</h4>
+                    <p class="text-slate-600">¡Sí! Puedes entrar al chat en cualquier momento y hablar con el cliente si lo deseas. El bot se detiene si detecta que tú estás respondiendo.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h4 class="font-bold text-lg mb-2">¿Qué pasa si no tengo las fotos de todos los zapatos?</h4>
+                    <p class="text-slate-600">Te ayudamos a organizar tu catálogo. El sistema puede funcionar solo con texto inicialmente, pero las fotos aumentan las ventas un 70%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO Y CIERRE -->
+    <section id="contacto" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto bg-slate-900 rounded-[3rem] p-12 md:p-20 text-white relative overflow-hidden">
+            <div class="relative z-10 grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight">Lleva tu zapatería al <span class="text-green-500">siguiente nivel</span></h2>
+                    <p class="text-xl text-slate-400 mb-12">Únete a las cientos de zapaterías que ya automatizaron su éxito. No es un gasto, es la mejor inversión para tu negocio.</p>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center text-green-500">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <p class="font-bold">Garantía de satisfacción de 15 días</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 md:p-12 rounded-[2rem] text-slate-900 shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-8 text-center">Solicita tu Diagnóstico Gratis</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Nombre del Dueño / Administrador</label>
+                            <input type="text" class="w-full px-4 py-4 bg-slate-50 border-2 border-slate-100 rounded-xl focus:border-green-500 outline-none transition" placeholder="Tu nombre">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Nombre de la Zapatería</label>
+                            <input type="text" class="w-full px-4 py-4 bg-slate-50 border-2 border-slate-100 rounded-xl focus:border-green-500 outline-none transition" placeholder="Ej: Calzado Elegance">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">WhatsApp de Contacto</label>
+                            <input type="tel" class="w-full px-4 py-4 bg-slate-50 border-2 border-slate-100 rounded-xl focus:border-green-500 outline-none transition" placeholder="+57 ...">
+                        </div>
+                        <button type="button" class="w-full whatsapp-green text-white font-black py-5 rounded-xl text-xl shadow-lg hover:bg-green-600 transition transform hover:scale-[1.02]">
+                            ¡QUIERO EMPEZAR YA!
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- Decoración -->
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-green-500/10 rounded-full -mb-32 -ml-32"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 px-6 text-center text-slate-500 border-t border-slate-200">
+        <p class="font-bold mb-2">OMNIX © 2026 - Todos los derechos reservados</p>
+        <p class="text-sm">Diseñado exclusivamente para el sector calzado.</p>
+    </footer>
+
+</body>
+</html>
